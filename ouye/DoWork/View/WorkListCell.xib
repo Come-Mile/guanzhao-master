@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="WorkListCellId" id="KGk-i7-Jjw" customClass="WorkListCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="_shuju" translatesAutoresizingMaskIntoConstraints="NO" id="KfA-oB-qKe">
+                        <rect key="frame" x="20" y="12" width="24" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="W6m-Nr-zKG"/>
+                            <constraint firstAttribute="width" constant="24" id="oOR-iI-3wo"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpG-fv-3bl">
+                        <rect key="frame" x="52" y="0.0" width="211" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CellArrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="USP-K4-D3M">
+                        <rect key="frame" x="290" y="15" width="8" height="13"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="13" id="7JC-wm-3ej"/>
+                            <constraint firstAttribute="width" constant="8" id="tDl-ch-URm"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="bpG-fv-3bl" firstAttribute="leading" secondItem="KfA-oB-qKe" secondAttribute="trailing" constant="8" id="76E-84-ErP"/>
+                    <constraint firstAttribute="bottom" secondItem="bpG-fv-3bl" secondAttribute="bottom" id="8L2-ed-BgZ"/>
+                    <constraint firstAttribute="bottom" secondItem="USP-K4-D3M" secondAttribute="bottom" constant="15.5" id="Enj-N3-xGb"/>
+                    <constraint firstItem="KfA-oB-qKe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XQ2-Wc-814"/>
+                    <constraint firstItem="USP-K4-D3M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="bzE-lX-MiB"/>
+                    <constraint firstAttribute="trailing" secondItem="USP-K4-D3M" secondAttribute="trailing" constant="22" id="c1y-NL-880"/>
+                    <constraint firstItem="KfA-oB-qKe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jzs-oA-bo3"/>
+                    <constraint firstItem="bpG-fv-3bl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="qwg-lA-9bj"/>
+                    <constraint firstItem="USP-K4-D3M" firstAttribute="leading" secondItem="bpG-fv-3bl" secondAttribute="trailing" constant="27" id="sOz-do-UB8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imaView" destination="KfA-oB-qKe" id="ylb-Sr-cm6"/>
+                <outlet property="titleLabel" destination="bpG-fv-3bl" id="R5w-0b-0cj"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="CellArrow.png" width="8" height="12"/>
+        <image name="_shuju" width="19" height="16"/>
+    </resources>
+</document>
